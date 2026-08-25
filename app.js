@@ -1,6 +1,4 @@
 require("dotenv").config()
-
-
 const cors = require("cors")
 const express = require("express")
 const { router } = require("./src/routes")
@@ -19,3 +17,5 @@ app.listen(PORT, () => {
     sequelize.sync()
     console.log(`Server running on: http://localhost:${PORT}`)
 })
+
+module.exports = app
